@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXDatePicker?>
+<?import com.jfoenix.controls.JFXTabPane?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="personelContainer" prefHeight="700.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="shinto.personel.PersonelController">
+    <children>
+        <JFXTabPane layoutX="118.0" layoutY="36.0" prefHeight="600.0" prefWidth="800.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <tabs>
+                <Tab text="Personeller">
+                    <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="569.0" prefWidth="800.0">
+                            <children>
+                        
+                                <GridPane layoutX="2.0" layoutY="4.0" prefHeight="205.0" prefWidth="891.0">
+                                    <columnConstraints>
+                                        <ColumnConstraints maxWidth="140.0" minWidth="10.0" prefWidth="140.0" />
+                                        <ColumnConstraints maxWidth="160.0" minWidth="10.0" prefWidth="160.0" />
+                                        <ColumnConstraints hgrow="NEVER" maxWidth="140.0" minWidth="10.0" prefWidth="55.0" />
+                                        <ColumnConstraints maxWidth="191.0" minWidth="10.0" prefWidth="116.0" />
+                                        <ColumnConstraints maxWidth="225.0" minWidth="10.0" prefWidth="225.0" />
+                              <ColumnConstraints maxWidth="0.0" minWidth="0.0" prefWidth="0.0" />
+                              <ColumnConstraints maxWidth="120.0" minWidth="110.0" prefWidth="150.0" />
+                                    </columnConstraints>
+                                    <rowConstraints>
+                                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    </rowConstraints>
+                                    <children>
+                                        <Label prefHeight="21.0" prefWidth="165.0" text=" Personelin Adı-Soyadı :">
+                                            <font>
+                                                <Font size="12.0" />
+                                            </font>
+                                        </Label>
+                                        <Label prefHeight="21.0" prefWidth="162.0" text=" E-Posta Adresi             :" GridPane.rowIndex="2">
+                                            <font>
+                                                <Font size="12.0" />
+                                            </font>
+                                        </Label>
+                                        <Label text=" Telefonu                      :" GridPane.rowIndex="1">
+                                            <font>
+                                                <Font size="12.0" />
+                                            </font>
+                                        </Label>
+                                        <Label text=" İşe Alınma Tarihi     :" GridPane.columnIndex="3">
+                                            <font>
+                                                <Font size="12.0" />
+                                            </font>
+                                        </Label>
+                                        <Label text=" Görevi                          :" GridPane.rowIndex="3">
+                                            <font>
+                                                <Font size="12.0" />
+                                            </font>
+                                        </Label>
+                                        <Label text=" Dili                          :" GridPane.columnIndex="3" GridPane.rowIndex="2">
+                                            <font>
+                                                <Font size="12.0" />
+                                            </font>
+                                        </Label>
+                                        <TextField GridPane.columnIndex="1" />
+                                        <TextField GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                                        <TextField GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                                        <ComboBox prefHeight="31.0" prefWidth="235.0" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                                        <ComboBox prefHeight="31.0" prefWidth="180.0" GridPane.columnIndex="4" GridPane.rowIndex="2" />
+                                        <JFXDatePicker GridPane.columnIndex="4" />
+                                        <Button mnemonicParsing="false" text="Yeni Personel Ekle" GridPane.columnIndex="6" GridPane.rowIndex="0">
+                                            <font>
+                                                <Font size="12.0" />
+                                            </font>
+                                        </Button>
+                                        <Button mnemonicParsing="false" text="Seçili Personeli Sil" GridPane.columnIndex="6" GridPane.rowIndex="1">
+                                            <font>
+                                                <Font size="12.0" />
+                                            </font>
+                                        </Button>
+                                        <Button mnemonicParsing="false" prefHeight="31.0" prefWidth="110.0" text="Kaydet" GridPane.columnIndex="6" GridPane.rowIndex="2">
+                                            <font>
+                                                <Font size="12.0" />
+                                            </font>
+                                        </Button>
+                                        <JFXDatePicker GridPane.columnIndex="4" GridPane.rowIndex="1" />
+                                        <Label text=" İşten Ayrılma Tarihi :" GridPane.columnIndex="3" GridPane.rowIndex="1">
+                                            <font>
+                                                <Font size="12.0" />
+                                            </font>
+                                        </Label>
+                                        <Label prefHeight="21.0" prefWidth="144.0" text=" Durumu                  :" GridPane.columnIndex="3" GridPane.rowIndex="3">
+                                            <font>
+                                                <Font size="12.0" />
+                                            </font>
+                                        </Label>
+                                        <ComboBox prefHeight="31.0" prefWidth="179.0" GridPane.columnIndex="4" GridPane.rowIndex="3" />
+                                        <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="109.0" text="Yazdır" GridPane.columnIndex="6" GridPane.rowIndex="3">
+                                            <font>
+                                                <Font size="12.0" />
+                                            </font>
+                                        </Button>
+                                    </children>
+                                </GridPane>
+                                <TableView layoutX="7.0" layoutY="218.0" prefHeight="445.0" prefWidth="900.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="218.0">
+                                    <columns>
+                                        <TableColumn prefWidth="250.0" text="Personelin Adı-Soyadı" />
+                                        <TableColumn prefWidth="150.0" text="Telefonu" />
+                                        <TableColumn prefWidth="250.0" text="E-Posta Adresi" />
+                                        <TableColumn prefWidth="115.0" text="Görevi" />
+                                        <TableColumn prefWidth="150.0" text="İşe Alınma Tarihi" />
+                                        <TableColumn prefWidth="150.0" text="İşten Ayrılma Tarihi" />
+                                        <TableColumn prefWidth="100.0" text="Dili" />
+                                        <TableColumn prefWidth="100.0" text="Durumu" />
+                                    </columns>
+                                </TableView>
+                            </children>
+                        </AnchorPane>
+                    </content>
+                </Tab>
+                <Tab text="Sattığı Biletler">
+                    <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="781.0" prefWidth="1227.0">
+                            <children>
+                                <TableView layoutX="266.0" layoutY="100.0" prefHeight="252.0" prefWidth="800.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+                                    <columns>
+                                        <TableColumn prefWidth="75.0" text="Bilet No" />
+                                        <TableColumn prefWidth="170.0" text="Bilet Düzenleme Tarihi" />
+                                        <TableColumn prefWidth="120.0" text="Müşteri Adı " />
+                                        <TableColumn prefWidth="90.0" text="Tur Adı" />
+                                        <TableColumn prefWidth="79.0" text="Tur Tarihi" />
+                                        <TableColumn prefWidth="130.0" text="Gelen Pas Şirketi" />
+                                        <TableColumn prefWidth="109.0" text="Otel Adı" />
+                                        <TableColumn prefWidth="82.0" text="Otel Oda No" />
+                                        <TableColumn prefWidth="96.0" text="Trs Saati" />
+                                        <TableColumn prefWidth="97.0" text="Dil" />
+                                        <TableColumn prefWidth="54.0" text="Bölge" />
+                                        <TableColumn minWidth="0.0" prefWidth="52.0" text="Yetişkin Sayısı" />
+                                        <TableColumn prefWidth="237.0" text="Çocuk Sayısı" />
+                                        <TableColumn prefWidth="75.0" text="Bebek Sayısı" />
+                                        <TableColumn prefWidth="75.0" text="Misafir Sayısı" />
+                                        <TableColumn prefWidth="75.0" text="Bileti Satan" />
+                                        <TableColumn prefWidth="75.0" text="Ödenen" />
+                                        <TableColumn prefWidth="75.0" text="Kalan" />
+                                        <TableColumn prefWidth="75.0" text="Toplam Tutar" />
+                                        <TableColumn prefWidth="75.0" text="Column X" />
+                                    </columns>
+                                </TableView>
+                                <GridPane alignment="CENTER" layoutY="380.0" prefHeight="163.0" prefWidth="800.0">
+                                    <columnConstraints>
+                                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="262.0" minWidth="10.0" prefWidth="195.0" />
+                                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="452.0" minWidth="10.0" prefWidth="137.0" />
+                                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="439.0" minWidth="10.0" prefWidth="130.0" />
+                                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="333.0" minWidth="10.0" prefWidth="124.0" />
+                                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="235.0" minWidth="10.0" prefWidth="126.0" />
+                                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="110.0" minWidth="10.0" prefWidth="92.0" />
+                                    </columnConstraints>
+                                    <rowConstraints>
+                                        <RowConstraints maxHeight="36.0" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                        <RowConstraints maxHeight="62.0" minHeight="10.0" prefHeight="43.0" vgrow="SOMETIMES" />
+                                        <RowConstraints maxHeight="49.0" minHeight="10.0" prefHeight="49.0" vgrow="SOMETIMES" />
+                                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    </rowConstraints>
+                                    <children>
+                                        <Label text=" TOPLAM FİYATLAR" GridPane.rowIndex="1" />
+                                        <Label text=" ÖDENENLER TOPLAMI" GridPane.rowIndex="2" />
+                                        <Label text=" PERSONELİN KOMİSYONU" GridPane.rowIndex="3" />
+                                        <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="35.0" prefWidth="148.0" text="€" GridPane.columnIndex="1">
+                                            <font>
+                                                <Font size="24.0" />
+                                            </font>
+                                        </Label>
+                                        <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="35.0" prefWidth="206.0" text="\$" GridPane.columnIndex="2">
+                                            <font>
+                                                <Font size="24.0" />
+                                            </font>
+                                        </Label>
+                                        <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="35.0" prefWidth="193.0" text="₺" GridPane.columnIndex="3">
+                                            <font>
+                                                <Font size="24.0" />
+                                            </font>
+                                        </Label>
+                                        <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="21.0" prefWidth="176.0" text="TOPLAM" GridPane.columnIndex="4">
+                                            <font>
+                                                <Font name="System Bold" size="12.0" />
+                                            </font>
+                                        </Label>
+                                        <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="27.0" prefWidth="106.0" text="PARA BİRİMİ" GridPane.columnIndex="5">
+                                            <font>
+                                                <Font name="System Bold" size="12.0" />
+                                            </font>
+                                        </Label>
+                                        <TextField GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                                        <TextField GridPane.columnIndex="2" GridPane.rowIndex="1" />
+                                        <TextField prefHeight="31.0" prefWidth="212.0" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+                                        <TextField GridPane.columnIndex="4" GridPane.rowIndex="1" />
+                                        <TextField GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                                        <TextField GridPane.columnIndex="2" GridPane.rowIndex="2" />
+                                        <TextField GridPane.columnIndex="3" GridPane.rowIndex="2" />
+                                        <TextField GridPane.columnIndex="4" GridPane.rowIndex="2" />
+                                        <TextField GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                                        <TextField GridPane.columnIndex="2" GridPane.rowIndex="3" />
+                                        <TextField GridPane.columnIndex="3" GridPane.rowIndex="3" />
+                                        <TextField GridPane.columnIndex="4" GridPane.rowIndex="3" />
+                                        <ComboBox prefWidth="150.0" GridPane.columnIndex="5" GridPane.rowIndex="1" />
+                                        <ComboBox prefWidth="150.0" GridPane.columnIndex="5" GridPane.rowIndex="2" />
+                                        <ComboBox prefWidth="150.0" GridPane.columnIndex="5" GridPane.rowIndex="3" />
+                                    </children>
+                                </GridPane>
+                                <Label layoutX="14.0" layoutY="73.0" text="Seçili Personelin Bilet Satış Değerleri" />
+                                <GridPane layoutY="10.0">
+                                    <columnConstraints>
+                                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="95.0" minWidth="10.0" prefWidth="79.0" />
+                                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="126.0" minWidth="10.0" prefWidth="121.0" />
+                                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="95.0" minWidth="10.0" prefWidth="77.0" />
+                                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="123.0" minWidth="10.0" prefWidth="99.0" />
+                                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="124.0" minWidth="10.0" prefWidth="86.0" />
+                                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="136.0" minWidth="10.0" prefWidth="101.0" />
+                                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="10.0" minWidth="10.0" prefWidth="10.0" />
+                                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                    </columnConstraints>
+                                    <rowConstraints>
+                                        <RowConstraints />
+                                        <RowConstraints />
+                                    </rowConstraints>
+                                    <children>
+                                        <ComboBox prefWidth="150.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                                        <Label text=" Personel Adı : " GridPane.rowIndex="1">
+                                            <font>
+                                                <Font size="12.0" />
+                                            </font>
+                                        </Label>
+                                        <DatePicker prefHeight="31.0" prefWidth="150.0" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+                                        <Label alignment="CENTER_RIGHT" prefHeight="17.0" prefWidth="100.0" text="İlk Tarih : " GridPane.columnIndex="2" GridPane.rowIndex="1">
+                                            <font>
+                                                <Font size="12.0" />
+                                            </font>
+                                        </Label>
+                                        <Label alignment="CENTER_RIGHT" prefHeight="17.0" prefWidth="99.0" text="Son Tarih : " GridPane.columnIndex="4" GridPane.rowIndex="1">
+                                            <font>
+                                                <Font size="12.0" />
+                                            </font>
+                                        </Label>
+                                        <DatePicker prefHeight="31.0" prefWidth="167.0" GridPane.columnIndex="5" GridPane.rowIndex="1" />
+                                        <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="31.0" prefWidth="87.0" text="Listele" GridPane.columnIndex="7" GridPane.rowIndex="1">
+                                            <font>
+                                                <Font size="12.0" />
+                                            </font>
+                                        </Button>
+                                        <Button mnemonicParsing="false" text="Yazdır" GridPane.columnIndex="8" GridPane.rowIndex="1">
+                                            <font>
+                                                <Font size="12.0" />
+                                            </font>
+                                        </Button>
+                                    </children>
+                                </GridPane>
+                            </children>
+                        </AnchorPane>
+                    </content>
+                </Tab>
+            </tabs>
+        </JFXTabPane>
+    </children>
+</AnchorPane>

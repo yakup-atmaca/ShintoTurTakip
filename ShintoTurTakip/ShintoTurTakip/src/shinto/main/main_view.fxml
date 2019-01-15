@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXTabPane?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+
+<AnchorPane id="AnchorPane" fx:id="root" prefHeight="700.0" prefWidth="1024.0" stylesheets="@../shinto/res/global.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="shinto.main.Controller"> 
+   
+    <StackPane prefHeight="700.0" prefWidth="1024.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <children>            
+            <JFXTabPane fx:id="tabContainer" prefHeight="50.0" prefWidth="100.0" side="LEFT" tabClosingPolicy="UNAVAILABLE">
+                <tabs>
+                    <Tab fx:id="logoTab" closable="false" text="">
+                        <content>
+                            <AnchorPane fx:id="logoContainer" minHeight="0.0" minWidth="0.0" prefHeight="700.0" prefWidth="1300.0">                     
+                            </AnchorPane>
+                        </content>
+                    </Tab>
+                   <Tab fx:id="biletGirisiTab" closable="false" text="Bilet Girişi">
+                        <content>
+                            <AnchorPane fx:id="biletGirisiContainer" minHeight="0.0" minWidth="0.0" >                     
+                            </AnchorPane>
+                        </content>
+                    </Tab>
+                    <Tab fx:id="turlarTab" closable="false" text="Turlar">
+                        <content>
+                            <AnchorPane fx:id="turlarContainer" minHeight="0.0" minWidth="0.0" prefHeight="700.0" prefWidth="1300.0" />
+                        </content>
+                    </Tab>
+                    <Tab fx:id="personelTab" closable="false" text="Personel">
+                        <content>
+                            <AnchorPane fx:id="personelContainer" minHeight="0.0" minWidth="0.0" prefHeight="700.0" prefWidth="1300.0" />
+                        </content>
+                    </Tab>
+                    <Tab fx:id="cariHesaplarTab" closable="false" text="Cari Hesaplar">
+                        <content>
+                            <AnchorPane fx:id="cariHesaplarContainer" minHeight="0.0" minWidth="0.0" prefHeight="700.0" prefWidth="1300.0" />
+                        </content>
+                    </Tab>
+                    <Tab fx:id="ucakBiletiTab" closable="false" text="Uçak Bileti">
+                        <content>
+                            <AnchorPane fx:id="ucakBiletiContainer" minHeight="0.0" minWidth="0.0" prefHeight="700.0" prefWidth="1300.0" />
+                        </content>
+                    </Tab>
+                    <Tab fx:id="ayarlarTab" closable="false" text="Ayarlar">
+                        <content>
+                            <AnchorPane fx:id="ayarlarContainer" minHeight="0.0" minWidth="0.0" prefHeight="700.0" prefWidth="1300.0" />
+                        </content>
+                    </Tab>
+                </tabs>
+            </JFXTabPane>
+        </children>
+    </StackPane>    
+</AnchorPane>

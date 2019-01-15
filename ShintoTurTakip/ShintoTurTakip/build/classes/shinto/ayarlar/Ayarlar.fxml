@@ -1,0 +1,421 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXTabPane?>
+<?import com.jfoenix.controls.JFXTimePicker?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="ayarlarContainer" prefHeight="700.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="shinto.ayarlar.AyarlarController">
+    <children>
+        <JFXTabPane layoutX="79.0" layoutY="54.0" prefHeight="484.0" prefWidth="807.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <tabs>
+                <Tab text="Kullanıcı Ayarları">
+                    <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                            <children>
+                                <GridPane layoutX="-1.0" prefHeight="405.0" prefWidth="900.0">
+                                    <columnConstraints>
+                                        <ColumnConstraints hgrow="NEVER" maxWidth="207.0" minWidth="10.0" prefWidth="147.0" />
+                                        <ColumnConstraints hgrow="NEVER" maxWidth="241.0" minWidth="10.0" prefWidth="177.0" />
+                                        <ColumnConstraints hgrow="NEVER" maxWidth="138.0" minWidth="10.0" prefWidth="18.0" />
+                                        <ColumnConstraints hgrow="NEVER" maxWidth="223.0" minWidth="10.0" prefWidth="92.0" />
+                                        <ColumnConstraints hgrow="NEVER" maxWidth="283.0" minWidth="10.0" prefWidth="200.0" />
+                                        <ColumnConstraints hgrow="NEVER" maxWidth="236.0" minWidth="10.0" prefWidth="50.0" />
+                                        <ColumnConstraints hgrow="NEVER" maxWidth="228.0" minWidth="10.0" prefWidth="56.0" />
+                                        <ColumnConstraints hgrow="NEVER" maxWidth="343.0" minWidth="10.0" prefWidth="179.0" />
+                                        <ColumnConstraints hgrow="NEVER" maxWidth="227.0" minWidth="10.0" prefWidth="63.0" />
+                                    </columnConstraints>
+                                    <rowConstraints>
+                                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    </rowConstraints>
+                                    <children>
+                                        <Label prefHeight="21.0" prefWidth="103.0" text=" Kullanıcı Adı : " GridPane.columnIndex="3">
+                                 <font>
+                                    <Font size="12.0" />
+                                 </font></Label>
+                                        <Label text=" Personel Adı-Soyadı : ">
+                                 <font>
+                                    <Font size="12.0" />
+                                 </font></Label>
+                                        <Label prefHeight="21.0" prefWidth="117.0" text=" Şifre : " GridPane.columnIndex="6">
+                                 <font>
+                                    <Font size="12.0" />
+                                 </font></Label>
+                                        <ComboBox prefHeight="31.0" prefWidth="236.0" GridPane.columnIndex="1" />
+                                        <TextField GridPane.columnIndex="4" />
+                                        <TextField GridPane.columnIndex="7" />
+                                        <CheckBox mnemonicParsing="false" text=" Bilet Satış Ekranı İzni" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                                 <font>
+                                    <Font size="12.0" />
+                                 </font></CheckBox>
+                                        <CheckBox mnemonicParsing="false" text=" Turlar Ekranı İzni" GridPane.columnIndex="4" GridPane.rowIndex="1">
+                                 <font>
+                                    <Font size="12.0" />
+                                 </font></CheckBox>
+                                        <CheckBox mnemonicParsing="false" text=" Personel Ekranı İzni" GridPane.columnIndex="7" GridPane.rowIndex="1">
+                                 <font>
+                                    <Font size="12.0" />
+                                 </font></CheckBox>
+                                        <CheckBox mnemonicParsing="false" text=" Cari Hesaplar Ekranı İzni" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                                 <font>
+                                    <Font size="12.0" />
+                                 </font></CheckBox>
+                                        <CheckBox mnemonicParsing="false" text=" Uçak Bileti Ekranı İzni" GridPane.columnIndex="4" GridPane.rowIndex="2">
+                                 <font>
+                                    <Font size="12.0" />
+                                 </font></CheckBox>
+                                        <CheckBox mnemonicParsing="false" text=" Ayarlar Ekranı İzni" GridPane.columnIndex="7" GridPane.rowIndex="2">
+                                 <font>
+                                    <Font size="12.0" />
+                                 </font></CheckBox>
+                                        <Button mnemonicParsing="false" prefHeight="54.0" prefWidth="121.0" text="Kaydet" GridPane.columnIndex="7" GridPane.rowIndex="3">
+                                            <font>
+                                                <Font size="20.0" />
+                                            </font>
+                                        </Button>
+                                    </children>
+                                </GridPane>
+                            </children>
+                        </AnchorPane>
+                    </content>
+                </Tab>
+                <Tab text="Firma Ayarları">
+                    <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="900.0">
+                            <children>
+                                <TableView layoutY="252.0" prefHeight="365.0" prefWidth="900.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="330.0">
+                                    <columns>
+                                        <TableColumn prefWidth="93.0" text="Firma Adı" />
+                                        <TableColumn prefWidth="100.0" text="Cari Grubu" />
+                                        <TableColumn prefWidth="96.0" text="Yetkili Kişi" />
+                                        <TableColumn prefWidth="75.0" text="Telefon" />
+                                        <TableColumn prefWidth="75.0" text="Fax" />
+                                        <TableColumn prefWidth="127.0" text="E-Posta" />
+                                        <TableColumn prefWidth="99.0" text="Adres" />
+                                        <TableColumn prefWidth="128.0" text="Vergi Dairesi" />
+                                        <TableColumn prefWidth="107.0" text="Vergi No" />
+                                    </columns>
+                                </TableView>
+                                <GridPane alignment="CENTER_RIGHT" layoutX="1.0" layoutY="1.0" prefHeight="325.0" prefWidth="900.0">
+                                    <columnConstraints>
+                                        <ColumnConstraints hgrow="NEVER" maxWidth="128.0" minWidth="10.0" prefWidth="102.0" />
+                                        <ColumnConstraints hgrow="NEVER" maxWidth="328.0" minWidth="10.0" prefWidth="190.0" />
+                                        <ColumnConstraints hgrow="NEVER" maxWidth="241.0" minWidth="10.0" prefWidth="147.0" />
+                                        <ColumnConstraints hgrow="NEVER" maxWidth="369.0" minWidth="10.0" prefWidth="194.0" />
+                                        <ColumnConstraints hgrow="NEVER" maxWidth="323.0" minWidth="10.0" prefWidth="121.0" />
+                                        <ColumnConstraints hgrow="NEVER" maxWidth="481.0" minWidth="10.0" prefWidth="297.0" />
+                              <ColumnConstraints hgrow="NEVER" maxWidth="481.0" minWidth="10.0" prefWidth="100.0" />
+                                    </columnConstraints>
+                                    <rowConstraints>
+                                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    </rowConstraints>
+                                    <children>
+                                        <Label text=" Firma Adı : ">
+                                 <font>
+                                    <Font size="12.0" />
+                                 </font></Label>
+                                        <TextField GridPane.columnIndex="1" />
+                                        <Label alignment="CENTER_RIGHT" prefHeight="21.0" prefWidth="148.0" text="Cari Grubu  : " GridPane.columnIndex="2">
+                                 <font>
+                                    <Font size="12.0" />
+                                 </font></Label>
+                                        <ComboBox prefWidth="150.0" GridPane.columnIndex="3" />
+                                        <Label alignment="CENTER_RIGHT" contentDisplay="RIGHT" prefHeight="21.0" prefWidth="121.0" text="Yetkili Kişi : " GridPane.columnIndex="4">
+                                 <font>
+                                    <Font size="12.0" />
+                                 </font></Label>
+                                        <TextField GridPane.columnIndex="5" />
+                                        <Button mnemonicParsing="false" text="Kaydet" GridPane.columnIndex="4" GridPane.rowIndex="3" />
+                                        <Button mnemonicParsing="false" text="Sil" GridPane.columnIndex="5" GridPane.rowIndex="3" />
+                                        <Label text=" Telefon    : " GridPane.rowIndex="1">
+                                 <font>
+                                    <Font size="12.0" />
+                                 </font></Label>
+                                        <Label alignment="CENTER_RIGHT" prefHeight="21.0" prefWidth="147.0" text="Fax               :" GridPane.columnIndex="2" GridPane.rowIndex="1">
+                                 <font>
+                                    <Font size="12.0" />
+                                 </font></Label>
+                                        <Label alignment="CENTER_RIGHT" prefHeight="21.0" prefWidth="121.0" text="E-Posta     : " GridPane.columnIndex="4" GridPane.rowIndex="1">
+                                 <font>
+                                    <Font size="12.0" />
+                                 </font></Label>
+                                        <Label text=" Adres      :" GridPane.rowIndex="2">
+                                 <font>
+                                    <Font size="12.0" />
+                                 </font></Label>
+                                        <Label alignment="CENTER_RIGHT" prefHeight="21.0" prefWidth="147.0" text="Vergi Dairesi :" GridPane.columnIndex="2" GridPane.rowIndex="2">
+                                 <font>
+                                    <Font size="12.0" />
+                                 </font></Label>
+                                        <Label alignment="CENTER_RIGHT" prefHeight="21.0" prefWidth="121.0" text="Vergi No    : " GridPane.columnIndex="4" GridPane.rowIndex="2">
+                                 <font>
+                                    <Font size="12.0" />
+                                 </font></Label>
+                                        <TextArea prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                                        <TextField GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                                        <TextField GridPane.columnIndex="3" GridPane.rowIndex="1" />
+                                        <TextField GridPane.columnIndex="5" GridPane.rowIndex="1" />
+                                        <TextField GridPane.columnIndex="3" GridPane.rowIndex="2" />
+                                        <TextField GridPane.columnIndex="5" GridPane.rowIndex="2" />
+                                    </children>
+                                </GridPane>
+                        
+                            </children>
+                        </AnchorPane>
+                    </content>
+                </Tab>
+                <Tab text="Tur Ayarları">
+                    <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                            <children>
+                                <TableView layoutY="82.0" prefHeight="412.0" prefWidth="1038.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="150.0">
+                                    <columns>
+                                        <TableColumn prefWidth="75.0" text="Tur Adı" />
+                                        <TableColumn prefWidth="132.0" text="Yakıt Maliyeti" />
+                                        <TableColumn prefWidth="204.0" text="Açıklama" />
+                                    </columns>
+                                </TableView>
+                                <Label layoutX="23.0" layoutY="62.0" prefHeight="21.0" prefWidth="64.0" text="Tur Adı : ">
+                           <font>
+                              <Font size="12.0" />
+                           </font></Label>
+                                <Label layoutX="635.0" layoutY="62.0" prefHeight="21.0" prefWidth="73.0" text="Açıklama : ">
+                           <font>
+                              <Font size="12.0" />
+                           </font></Label>
+                                <TextField layoutX="84.0" layoutY="57.0" />
+                                <TextField layoutX="699.0" layoutY="57.0" />
+                                <Button layoutX="412.0" layoutY="100.0" mnemonicParsing="false" text="Kaydet" />
+                                <Button layoutX="643.0" layoutY="100.0" mnemonicParsing="false" text="Sil" />
+                        <Label layoutX="311.0" layoutY="62.0" prefHeight="21.0" prefWidth="101.0" text="Yakıt Maliyeti : ">
+                           <font>
+                              <Font size="12.0" />
+                           </font></Label>
+                        <TextField layoutX="412.0" layoutY="57.0" />
+                            </children>
+                        </AnchorPane>
+                    </content>
+                </Tab>
+                <Tab text="Bölge Ayarları">
+                    <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                            <children>
+                                <TableView layoutY="82.0" prefHeight="412.0" prefWidth="1038.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="150.0">
+                                    <columns>
+                                        <TableColumn prefWidth="75.0" text="Bölge ID" />
+                                        <TableColumn prefWidth="75.0" text="Bölge Adı" />
+                                        <TableColumn prefWidth="261.0" text="Açıklama" />
+                                    </columns>
+                                </TableView>
+                                <Label layoutX="17.0" layoutY="62.0" prefHeight="21.0" prefWidth="66.0" text="Bölge Adı : ">
+                           <font>
+                              <Font size="12.0" />
+                           </font></Label>
+                                <Label layoutX="319.0" layoutY="62.0" prefHeight="21.0" prefWidth="74.0" text="Açıklama : ">
+                           <font>
+                              <Font size="12.0" />
+                           </font></Label>
+                                <TextField layoutX="84.0" layoutY="57.0" />
+                                <TextField layoutX="381.0" layoutY="57.0" />
+                                <Button layoutX="645.0" layoutY="57.0" mnemonicParsing="false" text="Kaydet" />
+                                <Button layoutX="804.0" layoutY="57.0" mnemonicParsing="false" text="Sil" />
+                            </children>
+                        </AnchorPane>
+                    </content>
+                </Tab>
+                <Tab text="Bölge-Tur Zamanları">
+                    <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                            <children>
+                                <TableView layoutY="82.0" prefHeight="412.0" prefWidth="1038.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="150.0">
+                                    <columns>
+                                        <TableColumn prefWidth="75.0" text="Tur Adı" />
+                                        <TableColumn prefWidth="75.0" text="Bölge Adı" />
+                                        <TableColumn prefWidth="261.0" text="Hareket Saati" />
+                                    </columns>
+                                </TableView>
+                                <Label layoutX="36.0" layoutY="62.0" text="Tur Adı : ">
+                           <font>
+                              <Font size="12.0" />
+                           </font></Label>
+                                <Label layoutX="284.0" layoutY="62.0" prefHeight="21.0" prefWidth="74.0" text="Bölge Adı : ">
+                           <font>
+                              <Font size="12.0" />
+                           </font></Label>
+                                <Button layoutX="793.0" layoutY="57.0" mnemonicParsing="false" text="Kaydet" />
+                                <Button layoutX="933.0" layoutY="57.0" mnemonicParsing="false" text="Sil" />
+                                <ComboBox layoutX="95.0" layoutY="57.0" prefWidth="150.0" />
+                                <ComboBox layoutX="358.0" layoutY="57.0" prefWidth="150.0" />
+                                <Label layoutX="540.0" layoutY="62.0" prefHeight="21.0" prefWidth="102.0" text="Hareket Saati : ">
+                           <font>
+                              <Font size="12.0" />
+                           </font></Label>
+                                <JFXTimePicker layoutX="635.0" layoutY="57.0" prefHeight="31.0" prefWidth="113.0" />
+                        
+                            </children>
+                        </AnchorPane>
+                    </content>
+                </Tab>
+                <Tab text="Otel Ayarları">
+                    <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                            <children>
+                                <Label layoutX="36.0" layoutY="62.0" text="Otel Adı : ">
+                           <font>
+                              <Font size="12.0" />
+                           </font></Label>
+                                <Label layoutX="284.0" layoutY="62.0" prefHeight="21.0" prefWidth="74.0" text="Bölge Adı : ">
+                           <font>
+                              <Font size="12.0" />
+                           </font></Label>
+                                <Button layoutX="574.0" layoutY="55.0" mnemonicParsing="false" text="Kaydet" />
+                                <Button layoutX="672.0" layoutY="57.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="53.0" text="Sil" />
+                                <ComboBox layoutX="358.0" layoutY="57.0" prefWidth="150.0" />
+                                <TextField layoutX="91.0" layoutY="57.0" />
+                                <TableView layoutY="82.0" prefHeight="412.0" prefWidth="1038.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="150.0">
+                                    <columns>
+                                        <TableColumn prefWidth="183.0" text="Otel Adı" />
+                                        <TableColumn prefWidth="209.0" text="Bölge Adı" />
+                                    </columns>
+                                </TableView>
+                            </children>
+                        </AnchorPane>
+                    </content>
+                </Tab>
+                <Tab text="Otobüs Ayarları">
+                    <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                            <children>
+                                <TableView layoutY="82.0" prefHeight="498.0" prefWidth="1198.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="200.0">
+                                    <columns>
+                                        <TableColumn prefWidth="183.0" text="Plaka No" />
+                                        <TableColumn prefWidth="209.0" text="Firma Adı" />
+                              <TableColumn prefWidth="761.0" text="Araç Bilgisi" />
+                                    </columns>
+                                </TableView>
+                        <GridPane prefHeight="151.0" prefWidth="900.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+                          <columnConstraints>
+                            <ColumnConstraints hgrow="SOMETIMES" maxWidth="105.0" minWidth="10.0" prefWidth="86.0" />
+                            <ColumnConstraints hgrow="SOMETIMES" maxWidth="235.0" minWidth="10.0" prefWidth="163.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="110.0" minWidth="10.0" prefWidth="18.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="166.0" minWidth="10.0" prefWidth="78.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="240.0" minWidth="10.0" prefWidth="191.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="114.0" minWidth="10.0" prefWidth="61.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="160.0" minWidth="10.0" prefWidth="76.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="344.0" minWidth="10.0" prefWidth="275.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="98.0" minWidth="10.0" prefWidth="12.0" />
+                          </columnConstraints>
+                          <rowConstraints>
+                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                          </rowConstraints>
+                           <children>                        
+                                      <Label text=" Plaka No : ">
+                                 <font>
+                                    <Font size="12.0" />
+                                 </font></Label>
+                                      <TextField GridPane.columnIndex="1" />
+                                      <Label prefHeight="21.0" prefWidth="84.0" text="Firma Adı : " GridPane.columnIndex="3">
+                                 <font>
+                                    <Font size="12.0" />
+                                 </font></Label>
+                                      <ComboBox prefHeight="31.0" prefWidth="202.0" GridPane.columnIndex="4" />
+                                      <Button mnemonicParsing="false" text="Kaydet" GridPane.columnIndex="4" GridPane.rowIndex="1" />
+                                      <Button mnemonicParsing="false" text="Sil" GridPane.columnIndex="5" GridPane.rowIndex="1" />
+                              <Label text="Araç Bilgisi :" GridPane.columnIndex="6">
+                                 <font>
+                                    <Font size="12.0" />
+                                 </font></Label>
+                              <TextField GridPane.columnIndex="7" />
+                           </children>
+                        </GridPane>
+                            </children>
+                        </AnchorPane>
+                    </content>
+                </Tab>
+                <Tab text="Döviz Ayarları">
+                    <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <GridPane prefHeight="137.0" prefWidth="900.0">
+                          <columnConstraints>
+                            <ColumnConstraints hgrow="NEVER" maxWidth="111.0" minWidth="10.0" prefWidth="92.0" />
+                            <ColumnConstraints hgrow="NEVER" maxWidth="121.0" minWidth="10.0" prefWidth="100.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="494.0" minWidth="10.0" prefWidth="92.0" />
+                              <ColumnConstraints hgrow="NEVER" maxWidth="193.0" minWidth="10.0" prefWidth="91.0" />
+                              <ColumnConstraints hgrow="NEVER" maxWidth="129.0" minWidth="10.0" prefWidth="100.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="401.0" minWidth="10.0" prefWidth="130.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="431.0" minWidth="10.0" prefWidth="309.0" />
+                          </columnConstraints>
+                          <rowConstraints>
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                          </rowConstraints>
+                           <children>
+                              <Label text=" 1 € = " GridPane.rowIndex="1">
+                                 <font>
+                                    <Font size="30.0" />
+                                 </font>
+                              </Label>
+                              <Label text=" 1 $ = " GridPane.columnIndex="3" GridPane.rowIndex="1">
+                                 <font>
+                                    <Font size="30.0" />
+                                 </font>
+                              </Label>
+                              <Label text="₺" GridPane.columnIndex="2" GridPane.rowIndex="1">
+                                 <font>
+                                    <Font size="30.0" />
+                                 </font>
+                              </Label>
+                              <Label text="₺" GridPane.columnIndex="5" GridPane.rowIndex="1">
+                                 <font>
+                                    <Font size="30.0" />
+                                 </font>
+                              </Label>
+                              <TextField GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                              <TextField GridPane.columnIndex="4" GridPane.rowIndex="1" />
+                              <Button mnemonicParsing="false" prefHeight="31.0" prefWidth="228.0" text="Döviz Kurlarını İnternetten Çek" GridPane.columnIndex="6" GridPane.rowIndex="1" />
+                              <Button mnemonicParsing="false" prefHeight="44.0" prefWidth="231.0" text="Kaydet" GridPane.columnIndex="6" GridPane.rowIndex="3" />
+                           </children>
+                        </GridPane>
+                        <TableView layoutY="82.0" prefHeight="493.0" prefWidth="900.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="170.0">
+                          <columns>
+                            <TableColumn prefWidth="127.0" text="Tarih" />
+                            <TableColumn prefWidth="92.0" text="€" />
+                              <TableColumn prefWidth="111.0" text="\$" />
+                          </columns>
+                        </TableView>
+                     </children></AnchorPane>
+                    </content>
+                </Tab>
+                <Tab text="Yedekle">
+                    <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+                    </content>
+                </Tab>
+            
+            </tabs>
+        </JFXTabPane>
+    </children>
+</AnchorPane>
